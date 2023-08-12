@@ -5,19 +5,12 @@
 #Check it, return true or false on it.
 
 
-list_a=[1,2,3,4,5,6,7,8,9,10,11,12]
-list_b=[1,2,5,7,8,4,0,84,3,6,345,65]
-
+list_a=[1,2,3,4,5,6,7,8,9,10]
+list_b=[1,2,5,7,8,4,0,84,3,6]
 
 def is_consecutive(list_a):
-    for i in list_a(0 , 12):
-            if int((1==(2-1))):True
-    else: False
-    if list_a is True:print(list_a)
+    sorted_list = sorted(list_a)
+    cons = all(sorted_list[i] == sorted_list[i-1] + 1 for i in range(1, len(sorted_list)))
+    print(list_a)
     is_consecutive(list_a)
     
-
-    print(list_a)
-
-
-
